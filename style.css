@@ -207,7 +207,7 @@ li {
 }
 
 /* services */
-.services{
+.services {
     background-color: #232426;
     display: flex;
     justify-content: center;
@@ -216,30 +216,203 @@ li {
     padding: 100 0;
     gap: 40px;
 }
-.services h2{
+
+.services h2 {
     font-size: 30px;
-    background-color: white;
+    color: white;
 }
 
-.services .service-container{
+.services .service-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
 }
-.services .service-container .service-card{
-    width: 100px;
+
+.services .service-container .service-card {
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
 }
-.services .service-container .service-card img{
+
+.services .service-container .service-card img {
     width: 100%;
 }
-.services .service-container .service-card h3{
+
+.services .service-container .service-card h3 {
     color: white;
-   
+    white-space: nowrap;
+
+}
+
+@media(max-width:600px) {
+    .services {
+        padding: 100px 0;
+        gap: 50px;
+    }
+}
+
+/* .project */
+.Project {
+    background-color: #232426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100 0;
+    gap: 40px;
+}
+
+.Project h2 {
+    color: white;
+    font-size: 30px;
+}
+.Project .Project-container .Project-card h5{
+    color: white;
+    font-size: 20px;
+}
+
+.Project .Project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.Project .Project-container .Project-card {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Project .Project-container .Project-card img {
+    width: 100%;
+
+}
+
+.Project .Project-container .Project-card h5 {
+    color: white;
+    white-space: nowrap;
+    gap: 40px;
+
+}
+
+@media(max-width:600px) {
+    .Project {
+        padding: 100px 0;
+        gap: 50px;
+    }
+}
+
+/* footer1 */
+.footer {
+    width: 100%;
+    background-color: #6c4343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px;
+}
+
+.footer .top-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .top-footer .content {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .top-footer h2 {
+    color: #956767;
+    
+}
+
+.footer .top-footer h2 span {
+    display: block;
+}
+
+.footer .top-footer h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .top-footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.footer .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.footer .contact .phone img {
+    width: 50px;
+    height: 50px;
+}
+.footer .contact .email img{
+    width: 50px;
+    height: 50px;
+}
+.footer .buttom-footer{
+    border-top: 1px solid #956767;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    color: white;
+}
+.footer .top-footer .content img{
+    width: 30px;
+    height: 30px;
+}
+.fi{
+    width: 50%;
+}
+.footer .buttom-footer p{
+    font-weight: 400;
+    font-size: 11px;
+}
+@media(max-width:1100px){
+    .footer{
+        padding: 30px;
+        padding-top: 50px;
+    }
+.footer .top-footer{
+    flex-direction: column-reverse;
+}
 }
